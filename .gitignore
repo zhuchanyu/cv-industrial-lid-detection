@@ -1,0 +1,43 @@
+# === 大文件：绝对不要进仓库 ===
+*.mp4
+*.avi
+*.mov
+2405.14529v3.pdf
+
+# === 课程材料，不公开 ===
+大作业*.docx
+*.docx
+
+# === 预处理/训练产物 ===
+outputs/frames/
+outputs/rois/
+outputs/memory_bank/
+outputs/demo/*.mp4
+# 允许示例结果图和分数 csv 进仓库
+!outputs/sample_results/
+!outputs/scores/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# === 模型权重缓存 ===
+*.pth
+*.pt
+*.onnx
+~/.cache/torch/
+
+# === IDE / OS ===
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === 临时 ===
+*.log
+*.tmp
